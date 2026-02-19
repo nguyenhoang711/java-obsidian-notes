@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AIConcept/Giải thích MCP siêu đơn giản và hướng dẫn kết nối MCP Server.md",
+                "file": "JavaCoreNote/Day1Concurrency_and_Parallel.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Giải thích MCP siêu đơn giản và hướng dẫn kết nối MCP Server"
+              "title": "Day1Concurrency_and_Parallel"
             }
           }
         ]
@@ -185,26 +185,29 @@
   },
   "active": "92801e146c274f79",
   "lastOpenFiles": [
+    "JavaCoreNote/Day2_ThreadAndMultithreading.md",
+    "JavaCoreNote/Day1Concurrency_and_Parallel.md",
+    "JavaCoreNote/CompletableFuture.md",
+    "JavaCoreNote/Day6_Volatile.md",
+    "JavaCoreNote/Day5_Lock.md",
+    "JavaCoreNote/Day3_Stream_API.md",
+    "JavaCoreNote/Day4_LambdaExpress.md",
+    "JavaCoreNote/JDK_8_11_17.md",
+    "JavaCoreNote/Day8_threadpool_executorService.md",
+    "JavaCoreNote/Day7_synchronize_dand_retrantLock.md",
+    "Pasted image 20260210092856.png",
+    "AIConcept/Giải thích MCP siêu đơn giản và hướng dẫn kết nối MCP Server.md",
     "Pasted image 20260209174417.png",
     "Pasted image 20260209105450.png",
     "Pasted image 20260209104510.png",
     "Assets/Pasted image 20260209093939.png",
-    "JavaCoreNote/CompletableFuture.md",
-    "AIConcept/Giải thích MCP siêu đơn giản và hướng dẫn kết nối MCP Server.md",
     "JavaCoreNote",
-    "JavaCoreNote/Day4_LambdaExpress.md",
     "AIConcept",
-    "JavaCoreNote/Day3_Stream_API.md",
-    "JavaCoreNote/Day2_Thread.md",
-    "JavaCoreNote/Day1Concurrency_and_Parallel.md",
-    "JavaCoreNote/Day6_Volatile.md",
-    "JavaCoreNote/Day5_Lock.md",
     "Assets/Pasted image 20260205230926.png",
     "Assets/Pasted image 20260205230801.png",
     "Assets/Pasted image 20260205230704.png",
     "Assets/Pasted image 20260205230430.png",
     "Assets/Pasted image 20260205230357.png",
-    "Assets/Pasted image 20260205225758.png",
     "Assets",
     "New Text Document.txt",
     "Untitled.md"
