@@ -20,38 +20,11 @@ JMM: định nghĩa cách **threads** đọc ghi dữ liệu vào bộ nhớ.
 - **Visibility**: khi 1 thread thay đổi giá trị có thể thread khác không thấy sự thay đổi đó.
 - **Atomicity**: phép toán có thể bị gián đoạn giữa hừng
 - **Ordering**: Compiler có thể gây thay đổi thứ tự thực thi code gây lỗi.
-## 2.3.Synchronized_Locks_Atomic_Variables_ForkJoinPool
-2.3.1 Synchronized
-- Là cơ chế cho phép **chỉ 1 thread** mới có thể truy cập đoạn code cụ thể
-Java cung cấp 3 cách sử dụng đồng bộ
-+ Synchronized method
-+ Synchronized block (tăng hiệu suất)
-+ Synchronized static method
-# Phần 3: Locks – Kiểm soát đồng bộ nâng cao
-### 3.1. Phân biệt lock và synchronized
-
-| Lock (ReentrantLock)            | Synchronized                             |
-| ------------------------------- | ---------------------------------------- |
-| Kiểm soát chi tiết hơn          | Dễ sử dụng                               |
-| Phải unlock() thủ công          | Tự động giải phóng                       |
-| Có thể kiểm tra trạng thái lock | Ko thể kiểm tra thread bị lock hay khong |
-- trylock(): tránh deadlock khi khóa không thể unlock
-```java
-if (lock.tryLock()) { 
-    try {
-        // Thực hiện công việc
-    } finally {
-        lock.unlock();
-    }
-} else {
-    System.out.println("Không thể lấy lock, thử lại sau");
-}
-```
-# Phần 4: Atomic Variables – Giải pháp tối ưu cho biến dùng chung
-## 4.1 AtomicInteger - Thay thế synchronized
+# Phần 3: Atomic Variables – Giải pháp tối ưu cho biến dùng chung
+## 3.1 AtomicInteger - Thay thế synchronized
 Nếu chỉ cần cập nhật giá trị đơn giản --> **AtomicInteger** nhanh hơn **synchronized** và **lock**
 Nhanh hơn synchronized vì không cần lock --> CPU cache với compare-and-swap (CAS)
-# Phần 5: ForkJoinPool – Xử lý song song mạnh mẽ
+# Phần 4: ForkJoinPool – Xử lý song song mạnh mẽ
 - Là ThreadPool tối ưu cho các tác vụ đệ quy (divide and conquer)
 - **ForkJoinTask** để chia công việc thành các task con xử lý song song
 **ForkJoinPool** tận dụng đa lõi CPU hiệu quả hơn khi xử lý tác vụ song song
