@@ -9,8 +9,6 @@ Là interface chỉ có đúng **1 abstract method**. DÙng làm target type cho
 - Có thể có nhiều static methods
 - Annotation @FunctionalInteface là optional
 - Nền tảng của lambda expressions
-
-# Lambda expressions
 ## Built-ins functional inteface phổ biến
 Cung cấp sẵn trong pkg *java.util.function*
 ### Function<T, R> - Transform
