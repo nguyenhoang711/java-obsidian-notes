@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaCoreNote/Day3_Stream_API.md",
+                "file": "BackendAdvanced/CachingDesign.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day3_Stream_API"
+              "title": "CachingDesign"
             }
           }
         ]
@@ -185,30 +185,32 @@
   },
   "active": "92801e146c274f79",
   "lastOpenFiles": [
-    "JavaCoreNote/Day2_ThreadAndMultithreading.md",
+    "Assets/Pasted image 20260227000928.png",
+    "BackendAdvanced/CachingDesign.md",
+    "Assets/Pasted image 20260227000504.png",
+    "Assets/Pasted image 20260226235636.png",
+    "Assets/Pasted image 20260226234702.png",
+    "Assets/Pasted image 20260226233528.png",
+    "Assets/Pasted image 20260226233213.png",
+    "Assets/Pasted image 20260226233046.png",
+    "Assets/Pasted image 20260226232332.png",
+    "Assets/Pasted image 20260226232217.png",
+    "Assets/Pasted image 20260226231947.png",
+    "JavaCoreNote/CollectionsFramework.md",
+    "BackendAdvanced",
+    "JavaCoreNote/CompletableFuture.md",
     "JavaCoreNote/Day3_Stream_API.md",
+    "JavaCoreNote/Day2_ThreadAndMultithreading.md",
     "JavaCoreNote/Day4_LambdaExpress.md",
     "JavaCoreNote/Day5_Lock.md",
     "JavaCoreNote/Day6_Volatile.md",
-    "JavaCoreNote/CollectionsFramework.md",
-    "JavaCoreNote/CompletableFuture.md",
     "JavaCoreNote/Day1Concurrency_and_Parallel.md",
     "JavaCoreNote/Day8_threadpool_executorService.md",
     "JavaCoreNote/Day7_synchronize_dand_retrantLock.md",
     "JavaCoreNote/JDK_8_11_17.md",
     "AIConcept/Giải thích MCP siêu đơn giản và hướng dẫn kết nối MCP Server.md",
-    "Assets/Pasted image 20260210092856.png",
-    "Assets/Pasted image 20260209105450.png",
-    "Assets/Pasted image 20260209104510.png",
-    "Assets/Pasted image 20260209174417.png",
-    "Assets/Pasted image 20260209093939.png",
     "JavaCoreNote",
     "AIConcept",
-    "Assets/Pasted image 20260205230926.png",
-    "Assets/Pasted image 20260205230801.png",
-    "Assets/Pasted image 20260205230704.png",
-    "Assets/Pasted image 20260205230430.png",
-    "Assets/Pasted image 20260205230357.png",
     "Assets",
     "New Text Document.txt",
     "Untitled.md"
