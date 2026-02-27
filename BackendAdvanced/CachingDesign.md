@@ -157,5 +157,45 @@ Solutions:
 - không set expire time cho nó
 - **Background job để update cache periodically**: tạo 1 job tăng thời gian hết hạn, tránh bị key hết hạn
 - Locking/ mutex: không cho truy cập đồng thời vào key đó
-
+#### 3.1.4 Cache Penetration ()
+![[Pasted image 20260227220007.png]]
+Problem: không có data trong cache cũng như trong DB. khi có lượng lớn truy cập 
+--> cache miss --> DB miss --> DB down
+Solutions:
+- Set default value (not null): null là giá trị nhạy cảm trong lập trình, tránh lưu giá trị null --> logic xử lý ở tầng app đỡ bị lỗi. Java: luôn luôn check null -- NullPointerException
+- Validate Request: key không hợp lệ --> chặn không cho gửi tới DB (tránh tấn công DDoS)
+- Sử dụng Bloom Filter lọc data có tồn tại không
+Bloom Filter???
 ## 3. High traffic challenges
+#### 3.2.1 Problem 05: Hot keys
+![[Pasted image 20260227221815.png]]
+Problem: có 1 số key thường được truy cập, chỉ ở 1 node --> cache quá tải, down
+Solutions:
+- Copy hot keys into multiple keys and distribute the keys across multiple nodes: load balancer có logic để manipulate tới các node khác
+- **Local cache hot keys**: lưu tại cache local các key thường xuyên hứng được lượng lớn traffics
+#### 3.2.2 Problem 06: Large key
+![[Pasted image 20260227223249.png]]
+Problem: size of value is significantly large
+Solutions:
+- **Compress (nén lại)**
+- Split: nhưng cần có cơ chế khôi phục
+- Set a long TTL for large keys: time dài, tránh xóa rồi lại insert --> performance
+- **Choose right storage for large keys**
+
+#### 3.4 Cache Replacement
+- Least Recent Used (LRU)
+	- Use case: hot keys
+- Least Frequently Used (LFU)
+	- Use case: hot tweets
+- LRU + LFU
+Recap:
+![[Pasted image 20260227231350.png]]
+- Với những hotkey ít thay đổi --> job định kì cập nhật dữ liệu vào cache
+![[Pasted image 20260227231512.png]]
+- Đánh giá sơ đồ truy cập data --> pattern first
+- Popular combination: read aside + Write Around (Delete after)
+- Cache invalidation khó vì nhiều yếu tố
+
+Cơ chế log để đảm bảo tính consistency?
+
+![[Pasted image 20260227231945.png]]
