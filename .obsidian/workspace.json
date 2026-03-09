@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BackendAdvanced/CachingDesign.md",
+                "file": "BackendAdvanced/Index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CachingDesign"
+              "title": "Index"
             }
           }
         ]
@@ -185,8 +185,21 @@
   },
   "active": "92801e146c274f79",
   "lastOpenFiles": [
-    "Assets/Pasted image 20260227231945.png",
+    "BackendAdvanced/UnitTest.md",
+    "BackendAdvanced/Index.md",
     "BackendAdvanced/CachingDesign.md",
+    "BackendAdvanced/BuildTool & Annotation.md",
+    "JavaCoreNote/Day3_Stream_API.md",
+    "JavaCoreNote/Day1Concurrency_and_Parallel.md",
+    "JavaCoreNote/Day7_synchronize_dand_retrantLock.md",
+    "JavaCoreNote/Day8_threadpool_executorService.md",
+    "JavaCoreNote/JDK_8_11_17.md",
+    "JavaCoreNote/Day6_Volatile.md",
+    "JavaCoreNote/Day2_ThreadAndMultithreading.md",
+    "JavaCoreNote/CompletableFuture.md",
+    "JavaCoreNote/CollectionsFramework.md",
+    "BackendAdvanced",
+    "Assets/Pasted image 20260227231945.png",
     "Assets/Pasted image 20260227231512.png",
     "Assets/Pasted image 20260227231350.png",
     "Assets/Pasted image 20260227223249.png",
@@ -196,18 +209,8 @@
     "Assets/Pasted image 20260227000504.png",
     "Assets/Pasted image 20260226235636.png",
     "Assets/Pasted image 20260226234702.png",
-    "JavaCoreNote/CollectionsFramework.md",
-    "BackendAdvanced",
-    "JavaCoreNote/CompletableFuture.md",
-    "JavaCoreNote/Day3_Stream_API.md",
-    "JavaCoreNote/Day2_ThreadAndMultithreading.md",
     "JavaCoreNote/Day4_LambdaExpress.md",
     "JavaCoreNote/Day5_Lock.md",
-    "JavaCoreNote/Day6_Volatile.md",
-    "JavaCoreNote/Day1Concurrency_and_Parallel.md",
-    "JavaCoreNote/Day8_threadpool_executorService.md",
-    "JavaCoreNote/Day7_synchronize_dand_retrantLock.md",
-    "JavaCoreNote/JDK_8_11_17.md",
     "AIConcept/Giải thích MCP siêu đơn giản và hướng dẫn kết nối MCP Server.md",
     "JavaCoreNote",
     "AIConcept",
