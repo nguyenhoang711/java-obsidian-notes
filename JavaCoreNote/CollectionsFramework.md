@@ -223,3 +223,121 @@ deque.peekLast();      // O(1)
 | removeLast()        | O(n)          | O(1) ⭐             |
 | Memory              | Ít hơn ⭐      | Node reference     |
 | Cache               | friendly      | not friendly       |
+
+# HashMap
+## 1. **HashMap là gì? Cách hoạt động? Khi nào dùng HashMap?**
+Là implementation của Map interface, sử dụng **hash table** để lưu trữ key-value pairs. Key là unique, không có thứ tự
+## 2. Internal structure
+- Array of buckets
+- Mỗi buckets chứa linked list (tree nếu collision)
+- Default capacity: 16
+- Load factor: 0.75
+## 3. Performance
+
+| Operation        | Time Complexity |
+| ---------------- | --------------- |
+| put(key, value)  | O(1)            |
+| get(key)         | O(1)            |
+| remove(key)      | O(1)            |
+| containsKey(key) | O(1)            |
+| size()           | O(1)            |
+Worse case: O(n) khi tất cả key đều hash vào 1 bucket
+## 4. Ưu nhược điểm
+**Ưu điểm**
+- **Nhanh nhất**: O(1) với put, get, remove
+- **Flexible**: key-value pairs
+- **Null support**: 1 null key, nhiều null values
+**Nhược điểm**
+- Không thứ tự
+- Not thread-safe
+- Memory Overhead: buckets + load factor
+## 5. Khi nào dùng HashMap
+Nên dùng khi
+- Cần key-value pair
+- Lookup nhanh bằng key
+- Unordered
+- Cache, dict, counting
+Không nên dùng khi
+- cần thứ tự --> LinkedHashMap
+- Cần sort --> TreeMap
+- Cần thread-safe --> ConcurrentHashMap
+## 6. Custom Objects as Key
+Phải override hashCode() và equals()
+```java
+class User {
+	private String id;
+	
+	@Override
+	public int hashCode() {
+		return Objects.hash(id);
+	}
+	
+	@Override
+	public boolean equals(Object obj){
+		if(this == obj) return true;
+		if (!(obj instanceof User)) return false; 
+		return Objects.equals(id, ((User) obj).id);
+	}
+}
+Map<User, String> map = new HashMap<>();
+map.put(new User("1"), "John");
+```
+**Tóm tắt:**
+- HashMap: Hash table, key-value, không thứ tự
+- Performance: O(1) cho put, get, remove
+- Key unique: hashCode() và equals()
+- Ưu điểm: nhanh nhất, flexible
+- Nhược điểm: không thứ tự, not thread-safe
+- DÙng khi: lookup nhanh, cache, dictionary
+
+# HashSet
+## 1. **HashSet là gì? Cách hoạt động? Khi nào dùng HashSet?**
+HashSet là implementation của Set inteface, sử dụng HashMap internally để lưu trữ elements. Các giá trị là unique, unordered
+**Đặc điểm:**
+- Unique
+- Không thread-safe
+- Unordered
+- Nhanh nhất trong các loại Set
+## 2. Internal structure
+Sử dụng HashMap internally:
+- Element = key trong hashMap
+- Value = dummy object
+- Unique vì HashMap key là unique
+## 3. Performance
+
+| Operation         | Time complexity |
+| ----------------- | --------------- |
+| add(element)      | O(1)            |
+| remove(element)   | O(1)            |
+| contains(element) | O(1)            |
+| size()            | O(1)            |
+| Iteration         | O(n)            |
+## 4. How it works
+Hash-based
+```java
+HashSet<String> set = new HashSet<>();
+set.add("java");
+// 1. tính hashCode() của "Java"
+// 2. Tìm bucket trong hashMap
+// 3. Check equals() nếu có collision
+// 4. Add nếu chưa tồn tại
+```
+Uniqueless:
+- Dùng **hashCode**() và **equals**() để check duplicate
+- Override 2 method để check với custom object
+## 5. Ưu nhược điểm
+Ưu điểm:
+- **Nhanh nhất**: O(1) cho add, remove, contains
+- **Unique**: tự loại duplicate
+- **Memory efficient**: không lưu duplicate
+Nhược điểm:
+- **Không thứ tự**
+- **Không thread-safe**
+- **Phụ thuộc hashCode()**: performance phụ thuộc hash function
+## Tóm tắt
+**HashSet:** dùng HashMap internally, unique, unorder
+**Performance**: O(1) với add, remove, contains
+**Không thứ tự**
+**Ưu điểm**: nhanh, unique, memory efficient
+**Nhược điểm**: phụ thuộc hash function, not thread-safe
+Dùng khi: cần unique + performance cao

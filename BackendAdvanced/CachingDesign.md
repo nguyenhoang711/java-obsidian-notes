@@ -40,8 +40,14 @@ Nhược:
 - Data inconsistency
 ## 2.2 Write strategies
 Strategies:
-- Write-through app-> cache --> db
-- Write-back  app --> cache --> db
+- Write-through app-> cache --> db: hoàn tất khi cả 2 thao tác ghi này thực thi xong
+	- Đảm bảo consitency
+	- Chậm do chờ đợi cập nhât
+	- Phù hợp hệ thống đòi hỏi tính chính xác cao (ngân hàng, tài chính)
+- 
+- Write-back  app --> cache --> db: ghi vào cache là đã thành công (đồng bộ async)
+	- Xử lý batch
+	- Ghi log
 - Write-around
 Cho phép không valid cache 1 cách bất đồng bộ (asynchronously)
 Thao tác invalidate thực hiện sau hoặc trước khi ghi (nét đứt)
@@ -197,5 +203,4 @@ Recap:
 - Cache invalidation khó vì nhiều yếu tố
 
 Cơ chế log để đảm bảo tính consistency?
-
 ![[Pasted image 20260227231945.png]]
