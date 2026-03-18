@@ -23,3 +23,17 @@ Cần quan tâm đến:
 - **Time complexity**: các thao tác khác nhau có time khác nhau, chọn xem phù hợp cho trường hợp nào
 - **Space complexity**:
 - Complexity of implementation: logic có phức tạp để triển khai ko
+
+
+# 3. Checklist tạo index
+## 3.1 Dựa theo độ phổ biến (frequent)
+- Thường được đưa vào trong cột tìm kiếm thường xuyên (email, tên, ...)
+- Đưa vào trong các mệnh đề where
+## 3.2 Dựa trên liên kết
+- Tạo cho các cột khóa ngoại (tăng tốc độ join)
+## 3.3 Trường hợp không nên tạo index
+- Đối với các bảng quá nhỏ (tăng thêm bộ nhớ khi ghi dữ liệu --> ghi chậm)
+- Dữ liệu không phân mảnh, giá trị giới hạn (VD: giới tính, trạng thái)
+
+**Đọc nhiều --> ưu tiên index**
+**Ghi nhiều --> hạn chế index**
