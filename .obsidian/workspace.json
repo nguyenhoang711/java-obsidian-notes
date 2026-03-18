@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BackendAdvanced/Locking.md",
+                "file": "BackendAdvanced/BackendAdvanced_EngineerB3.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Locking"
+              "title": "BackendAdvanced_EngineerB3"
             }
           }
         ]
@@ -185,9 +185,12 @@
   },
   "active": "bd8175909a0d7d87",
   "lastOpenFiles": [
+    "BackendAdvanced/Index.md",
+    "BackendAdvanced/BackendAdvanced_EngineerB3.md",
+    "Assets/Pasted image 20260317234337.png",
+    "BackendAdvanced/Locking.md",
     "Assets/Pasted image 20260317001649.png",
     "Assets/Pasted image 20260316234917.png",
-    "BackendAdvanced/Locking.md",
     "Assets/Pasted image 20260317001448.png",
     "Assets/Pasted image 20260317000229.png",
     "Assets/Pasted image 20260316235152.png",
@@ -195,10 +198,8 @@
     "Assets/Pasted image 20260316234349.png",
     "Assets/Pasted image 20260316234545.png",
     "Assets/Pasted image 20260316232517.png",
-    "Assets/Pasted image 20260316234321.png",
     "BackendAdvanced/CachingDesign.md",
     "BackendAdvanced/UnitTest.md",
-    "BackendAdvanced/Index.md",
     "BackendAdvanced/BuildTool & Annotation.md",
     "JavaCoreNote/CollectionsFramework.md",
     "BackendAdvanced",
