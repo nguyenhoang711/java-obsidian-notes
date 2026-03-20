@@ -11,14 +11,12 @@
             "id": "bd8175909a0d7d87",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "BackendAdvanced/Index.md",
-                "mode": "source",
-                "source": false
+                "file": "Assets/Pasted image 20260320230643.png"
               },
-              "icon": "lucide-file",
-              "title": "Index"
+              "icon": "lucide-image",
+              "title": "Pasted image 20260320230643"
             }
           }
         ]
@@ -183,10 +181,18 @@
       "bases:Create new base": false
     }
   },
-  "active": "bd8175909a0d7d87",
+  "active": "c1945f7cf2ca7b37",
   "lastOpenFiles": [
-    "Assets/Pasted image 20260318231930.png",
+    "BackendAdvanced/BackendAdvanced_EngineerB2.md",
+    "BackendAdvanced/BackendAdvanced_EngineerB3.md",
+    "Assets/Pasted image 20260321000405.png",
+    "BackendAdvanced/BuildTool & Annotation.md",
+    "BackendAdvanced/CachingDesign.md",
     "BackendAdvanced/Index.md",
+    "BackendAdvanced/Locking.md",
+    "Assets/Pasted image 20260320230643.png",
+    "BackendAdvanced/UnitTest.md",
+    "Assets/Pasted image 20260318231930.png",
     "Assets/Pasted image 20260319002822.png",
     "Assets/Pasted image 20260319001803.png",
     "Assets/Pasted image 20260319001713.png",
@@ -194,14 +200,7 @@
     "Assets/Pasted image 20260319001030.png",
     "Assets/Pasted image 20260319000737.png",
     "Assets/Pasted image 20260318233436.png",
-    "Assets/Pasted image 20260318232816.png",
-    "Assets/Pasted image 20260318232500.png",
     "OS/Process.md",
-    "BackendAdvanced/UnitTest.md",
-    "BackendAdvanced/Locking.md",
-    "BackendAdvanced/CachingDesign.md",
-    "BackendAdvanced/BackendAdvanced_EngineerB3.md",
-    "BackendAdvanced/BuildTool & Annotation.md",
     "OS",
     "JavaCoreNote/CollectionsFramework.md",
     "BackendAdvanced",
