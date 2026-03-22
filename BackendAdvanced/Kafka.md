@@ -196,3 +196,37 @@ Alternatives:
 - An event is a business fact that immutable and have value to more than one service
 - Kafka has pros and cons of a message broker. Ngoài ra có chức năng: High-throughput data streaming and long-term data retention
 # 3. Core concept
+## 3.1 Architecture
+![[Pasted image 20260323001438.png]]
+- Broker
+	- Là kafka cluster có chứa multiple brokers
+	- Responsible for nhận/ gửi message và lưu trữ message
+	- Điều phối group consumers
+	- Chọn ra consumer leader
+- Zookeeper:
+	- Quản lý brokers và quản lý chung trong cụm
+## 3.2 Topic
+Là luồng các message/ event không có điểm dừng
+Producer ghi message vào topic, consumer đọc message từ topic
+1 cluster có nhiều topics, số lượng tùy vào config
+## 3.3 Partition
+![[Pasted image 20260323001847.png]]
+Một topic là 1 nhóm partitions
+Kafka sử dụng partitions để tăng throughput và spread (phân tán) messages tới tất cả brokers
+![[Pasted image 20260323001951.png]]
+Mỗi broker xử lý độc lập và song song
+VD: cụm cluster có 3 broker, topic X có 3 partition được trải đều trên 3 brokers.
+## 3.3 Partition
+- Được sắp xếp có thứ tự
+- Consumer sẽ đọc giá trị theo đúng thứ tự được ghi vào 
+![[Pasted image 20260323003116.png]]
+- Partition giuống 1 queue FIFO
+Với đầu ghi vào (producer)
+- Case 1: producer write to topic with only one partition (message theo đúng thứ tự ghi vào topic X)
+![[Pasted image 20260323003316.png]]
+- Case 2: nhiều producer ghi vào trong topic chỉ 1 partition
+![[Pasted image 20260323003343.png]]
+- Thứ tự ko đảm bảo (tùy thằng nào đến trước)
+![[Pasted image 20260323003553.png]]
+- Case 3: ghi vào multiple partitions
+	- 

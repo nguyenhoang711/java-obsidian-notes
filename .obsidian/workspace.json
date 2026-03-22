@@ -11,10 +11,12 @@
             "id": "c54f4d959d343b4d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "image",
+              "state": {
+                "file": "Assets/Pasted image 20260323001438.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20260323001438"
             }
           }
         ]
@@ -181,17 +183,17 @@
   },
   "active": "c1945f7cf2ca7b37",
   "lastOpenFiles": [
+    "Assets/Pasted image 20260323001847.png",
     "BackendAdvanced/Kafka.md",
+    "Assets/Pasted image 20260323003553.png",
+    "Assets/Pasted image 20260323003343.png",
+    "Assets/Pasted image 20260323003316.png",
+    "Assets/Pasted image 20260323003116.png",
+    "Assets/Pasted image 20260323001951.png",
+    "Assets/Pasted image 20260323001438.png",
+    "Assets/Pasted image 20260322004129.png",
     "Assets/Pasted image 20260322232334.png",
     "Assets/Pasted image 20260322231150.png",
-    "Assets/Pasted image 20260322230748.png",
-    "Assets/Pasted image 20260322230714.png",
-    "Assets/Pasted image 20260322224721.png",
-    "Assets/Pasted image 20260322153524.png",
-    "Assets/Pasted image 20260322143144.png",
-    "Assets/Pasted image 20260322143129.png",
-    "Assets/Pasted image 20260322142105.png",
-    "Assets/Pasted image 20260322142033.png",
     "BackendAdvanced/BackendAdvanced_EngineerB2.md",
     "BackendAdvanced/BackendAdvanced_EngineerB3.md",
     "BackendAdvanced/BuildTool & Annotation.md",
