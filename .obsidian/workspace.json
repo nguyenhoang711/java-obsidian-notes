@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "cb1f68ce0601f85d",
+        "id": "0a254008a81435a2",
         "type": "tabs",
         "children": [
           {
-            "id": "bd8175909a0d7d87",
+            "id": "c54f4d959d343b4d",
             "type": "leaf",
             "state": {
-              "type": "image",
-              "state": {
-                "file": "Assets/Pasted image 20260320230643.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20260320230643"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -183,23 +181,24 @@
   },
   "active": "c1945f7cf2ca7b37",
   "lastOpenFiles": [
+    "BackendAdvanced/Kafka.md",
+    "Assets/Pasted image 20260322232334.png",
+    "Assets/Pasted image 20260322231150.png",
+    "Assets/Pasted image 20260322230748.png",
+    "Assets/Pasted image 20260322230714.png",
+    "Assets/Pasted image 20260322224721.png",
+    "Assets/Pasted image 20260322153524.png",
+    "Assets/Pasted image 20260322143144.png",
+    "Assets/Pasted image 20260322143129.png",
+    "Assets/Pasted image 20260322142105.png",
+    "Assets/Pasted image 20260322142033.png",
     "BackendAdvanced/BackendAdvanced_EngineerB2.md",
     "BackendAdvanced/BackendAdvanced_EngineerB3.md",
-    "Assets/Pasted image 20260321000405.png",
     "BackendAdvanced/BuildTool & Annotation.md",
     "BackendAdvanced/CachingDesign.md",
     "BackendAdvanced/Index.md",
     "BackendAdvanced/Locking.md",
-    "Assets/Pasted image 20260320230643.png",
     "BackendAdvanced/UnitTest.md",
-    "Assets/Pasted image 20260318231930.png",
-    "Assets/Pasted image 20260319002822.png",
-    "Assets/Pasted image 20260319001803.png",
-    "Assets/Pasted image 20260319001713.png",
-    "Assets/Pasted image 20260319001525.png",
-    "Assets/Pasted image 20260319001030.png",
-    "Assets/Pasted image 20260319000737.png",
-    "Assets/Pasted image 20260318233436.png",
     "OS/Process.md",
     "OS",
     "JavaCoreNote/CollectionsFramework.md",
