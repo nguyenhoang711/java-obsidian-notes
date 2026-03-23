@@ -229,4 +229,82 @@ Với đầu ghi vào (producer)
 - Thứ tự ko đảm bảo (tùy thằng nào đến trước)
 ![[Pasted image 20260323003553.png]]
 - Case 3: ghi vào multiple partitions
-	- 
+### 4. Offset
+![[Pasted image 20260323225723.png]]
+- Là primary key cho record/ message trong partition
+- Ghi sao khi writen record/ message to partition
+- Start from 0
+- Fast lookup: O(1)
+- Advanced: gap between two adjacent records (offset gap)
+### 5. Records
+![[Pasted image 20260323230022.png]]
+Trong kafla nó là message, event
+Record là **immutable**
+Có 6 thuộc tính:
+- Key
+	- Optional, non-unique
+	- Nhóm các records (user_id)
+	- Tùy chọn kiểu dữ liệu
+- Value
+	- Phần quan trọng nhất: value describe event
+	- Nullable
+	- Tùy kiểu dữ liệu
+![[Pasted image 20260323231713.png]]
+Record có 6 tính chất
+- Header: các cặp key-value free style 
+- Partition: nơi records ở bên trong
+- Offset: 64-bit signed để locate record trong partition
+- Timestamp:
+	- Được set bởi broker (khi ghi vào broker)
+### 6.1 Producer
+Producer tạo message/ records và ghi vào topics
+Sử dụng Producer API (viết bởi ngôn ngữ lập trình chọn) để implement producer
+Vì sao cần Producer API: có các cơ chế phức tạp --> cần để đơn giản hóa
+- Partitioning
+- Serialization
+- Compression
+- Retry
+#### 6.1.11 TH partition được tạo bởi ProducerRecord
+![[Pasted image 20260323235044.png]]
+Partition luôn phải có để xác định insert record vào partition nào
+
+#### 6.1.2 Key khác null
+Key sẽ được hash để xác định partition insert vào
+Những record nào same key sẽ được sent vào same partition
+![[Pasted image 20260323235255.png]]
+Các record cùng key sẽ cùng trên 1 (key null nằm rải rác)
+#### 6.1.3 key == null
+![[Pasted image 20260323235411.png]]
+- version < 2.4.0 : sử dụng round-robin strategy
+- version > 2.4.0: Sticky (improved mechanism)
+## 6.2 The number of partitions changes
+Các Message cùng key có thể đặt cùng nhau trên partition khác với trước đó
+![[Pasted image 20260323235821.png]]
+VD:
+Do số lượng partition thay đổi nên công thức tính chọn partition insert vào cũng bị thay đổi
+## 7. Consumers
+Read message/ records từ topic sử dụng cơ chế pull/push
+Consume không remove khỏi topic
+Cần có Consumer API để giảm thiểu sự phức tạp vì có các cơ chế:
+- Consumer Group
+- Committing Offset
+- Rebalance
+- Liveness
+### 7.1 Consumer group
+Mỗi consumer đều nằm trong 1 consumer group
+Consumer Group đều có cơ chế load-balancing
+Phân bố partition thường là đều nhau với consumers trong consumer group
+![[Pasted image 20260324001756.png]]
+VD: Mỗi consumer đều gán số partition bằng nhau
+
+Khi start 1 consumer mà không xác định consumer group  --> tạo **random consumer group** tự động subscribe topic
+![[Pasted image 20260324002216.png]]
+Khi mà tạo consumer xác định group name --> consumer đầu tiền sẽ hứng tất cả message trong topic và consumer đó 
+![[Pasted image 20260324002430.png]]
+First consumer trong group sẽ subscribe topic, sẽ nhận tất cả partitions
+Khi có consumer thứ 2 join group, cơ chế **rebalane is triggered**. Khi đó second customer sẽ lấy nửa partition từ first consumer
+![[Pasted image 20260324002740.png]]
+Có thể có 1 partition gán cho nhiều hơn 1 consumer?
+![[Pasted image 20260324002848.png]]
+Không thể vì cơ chế hoạt động kafka chỉ cho phép tối đa 1 partition với 1 consumer
+Nếu số lượng consumer > partition --> không được 
