@@ -308,3 +308,25 @@ Có thể có 1 partition gán cho nhiều hơn 1 consumer?
 ![[Pasted image 20260324002848.png]]
 Không thể vì cơ chế hoạt động kafka chỉ cho phép tối đa 1 partition với 1 consumer
 Nếu số lượng consumer > partition --> không được 
+# 8. Replication (Đồng bộ)
+## 8.1 Problem context
+![[Pasted image 20260325222224.png]]
+Partition có broker bị lỗi, mất kết nối
+- Durability: mất data
+- Availability: không thể ghi hoặc đọc vào partition trong broker
+## 8.2 Solution (Replication)
+- Đồng bộ: đáp ứng được yêu cầu về durability và availability
+- A replica là copy of a partition
+- Replicas được phân bố giữa các broker (mỗi broker giữ bản replica của broker còn lại)
+![[Pasted image 20260325222547.png]]
+## 8.3 Replication factor
+- Là số lượng replicas, được cấu hình ở **topic level**
+- Replication factor default is 1 (Tối ưu: >1 và nhỏ hơn kích thước của **cluster**)
+## 8.4 Leader & Follower
+- Trong số các replica của partition, thằng nào là gốc gọi là leader ( duy nhất ) và còn lại là follower
+- Các replicas được đồng bộ cách asynchronously
+![[Pasted image 20260325223610.png]]
+- Khi mà follower nào đồng bộ xong với leader --> In-Sync replica (ISR). Bao gồm cả leader 
+## 8.5 Leadership
+Producer ghi vào leader, consumer chỉ đọc từ leader partition
+- Consumer có thể đọc từ 1 replica gần nhất (cấu hình consumer) --> lưu ý cần nắm cách thức hoạt động của nó
