@@ -13,10 +13,10 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "Assets/Pasted image 20260325222224.png"
+                "file": "Assets/Pasted image 20260327000611.png"
               },
               "icon": "lucide-image",
-              "title": "Pasted image 20260325222224"
+              "title": "Pasted image 20260327000611"
             }
           }
         ]
@@ -183,22 +183,22 @@
   },
   "active": "c1945f7cf2ca7b37",
   "lastOpenFiles": [
+    "BackendAdvanced/Index.md",
+    "Assets/Pasted image 20260327000611.png",
+    "Assets/Pasted image 20260327000456.png",
+    "Assets/Pasted image 20260327000021.png",
+    "Assets/Pasted image 20260326230104.png",
+    "BackendAdvanced/CachingDesign.md",
+    "Assets/Pasted image 20260325222224.png",
     "BackendAdvanced/Kafka.md",
     "Assets/Pasted image 20260325223610.png",
     "Assets/Pasted image 20260325222547.png",
-    "Assets/Pasted image 20260325222224.png",
     "Assets/Pasted image 20260323225723.png",
     "Assets/Pasted image 20260323230022.png",
     "Assets/Pasted image 20260324002848.png",
-    "Assets/Pasted image 20260324002740.png",
-    "Assets/Pasted image 20260324002430.png",
-    "Assets/Pasted image 20260324002216.png",
-    "Assets/Pasted image 20260324001756.png",
     "BackendAdvanced/BackendAdvanced_EngineerB2.md",
     "BackendAdvanced/BackendAdvanced_EngineerB3.md",
     "BackendAdvanced/BuildTool & Annotation.md",
-    "BackendAdvanced/CachingDesign.md",
-    "BackendAdvanced/Index.md",
     "BackendAdvanced/Locking.md",
     "BackendAdvanced/UnitTest.md",
     "OS/Process.md",

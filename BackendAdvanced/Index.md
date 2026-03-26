@@ -84,9 +84,43 @@ Lưu ý với secondary index
 Câu hỏi: Vì sao Secondary index chỉ lưu giá trị primary key mà không lưu pointer tới địa chỉ record trong ổ đĩa ?
 ![[Pasted image 20260319002822.png]]
 Vì địa chỉ (address) trên disk có thể thay đổi
-Theo thời gian disk bị fractment (phân mảnh) --> muốn gom data lại defractment (gom mảnh) địa chỉ record thay đổi
+Theo thời gian disk bị fracment (phân mảnh) --> muốn gom data lại defractment (gom mảnh) địa chỉ record thay đổi
 Các thao tác khác cũng có thể gây thay đổi địa chỉ
-
+## 2.3 Characteristics
+### 2.3.1 Characteristics
+What is difference between key & index ?
+- Key: nghĩa là ràng buộc, là behavior của 1 column
+VD: primary key có tính chất là non nullable và unique
+- Index: là cấu trúc dữ liệu mà **facilitates data search** (phục vụ việc tìm kiếm dữ liệu) trong table
+### 2.3.2 Primary index
+![[Pasted image 20260327000021.png]]
+Primary index là kiểu index chỉ cho phép giá trị unique cho từng dòng dữ liệu
+Khuyến khích sử dụng key sequential --> tối ưu cho việc đọc và ghi
+VD: số tăng dần --> thao tác update vào B-Tree hạn chế trường hợp thay đổi cấu trúc B-Tree
+khi key tăng dần thêm vào ô trống (không phải thêm node vào cây)
+- Hạn chế thao tác phân mảnh (bản ghi tăng dần nằm liền kề nhau)
+### 2.3.3 Unique index
+CREATE UNIQUE INDEX index_name ON
+table_name(index_col1, index_col2, ...)
+## 2.4 Number of columns
+### 2.4.1 Composite index
+![[Pasted image 20260327000456.png]]
+- Gồm nhiều cột
+- càng nhiều cột đánh index, càng tốn space
+- Nếu nhiều quá thì không giúp query tối ưu hơn
+Mô tả Composite index:
+![[Pasted image 20260327000611.png]]
+n column được đánh index thì được sử dụng làm key cho 1 node
+- Đến node lá (có cột màu đỏ) --> là primay key cầm đi để query trong clustered index
+Đối với composite key sắp xếp:
+- Theo cột đầu tiên index: sắp xếp tăng theo chiều trái sang phải
+- Theo cột thứ 2: sắp xếp tăng dần (đk chung value cột 1) nested sort
+- Cột n tương tự
+![[Pasted image 20260326230104.png]]
+Có 2 câu 1 và 4 sử dụng index (vì thứ tự trùng với composite key)
+Lí do: 
+- Giá trị key country thực hiện order đầu tiên --> phải chứa điều kiện về country thì mới sử dụng được index (cửa ngõ là country)
+- Thứ tự key được gọi trong logic AND không quan trọng
 # 3. Checklist tạo index
 ## 3.1 Dựa theo độ phổ biến (frequent)
 - Thường được đưa vào trong cột tìm kiếm thường xuyên (email, tên, ...)
