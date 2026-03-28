@@ -11,12 +11,14 @@
             "id": "5efb7ab78b8c837b",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Assets/Pasted image 20260327000611.png"
+                "file": "BackendAdvanced/Index.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20260327000611"
+              "icon": "lucide-file",
+              "title": "Index"
             }
           }
         ]
@@ -181,10 +183,14 @@
       "bases:Create new base": false
     }
   },
-  "active": "c1945f7cf2ca7b37",
+  "active": "5efb7ab78b8c837b",
   "lastOpenFiles": [
-    "BackendAdvanced/Index.md",
+    "Pasted image 20260328172407.png",
+    "Pasted image 20260328152115.png",
+    "Pasted image 20260328150719.png",
+    "Pasted image 20260328150326.png",
     "Assets/Pasted image 20260327000611.png",
+    "BackendAdvanced/Index.md",
     "Assets/Pasted image 20260327000456.png",
     "Assets/Pasted image 20260327000021.png",
     "Assets/Pasted image 20260326230104.png",
@@ -193,9 +199,6 @@
     "BackendAdvanced/Kafka.md",
     "Assets/Pasted image 20260325223610.png",
     "Assets/Pasted image 20260325222547.png",
-    "Assets/Pasted image 20260323225723.png",
-    "Assets/Pasted image 20260323230022.png",
-    "Assets/Pasted image 20260324002848.png",
     "BackendAdvanced/BackendAdvanced_EngineerB2.md",
     "BackendAdvanced/BackendAdvanced_EngineerB3.md",
     "BackendAdvanced/BuildTool & Annotation.md",
