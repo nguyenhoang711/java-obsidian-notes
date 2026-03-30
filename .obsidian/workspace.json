@@ -1,22 +1,22 @@
 {
   "main": {
-    "id": "d563f7a643857f88",
+    "id": "2bb850414cb5aab7",
     "type": "split",
     "children": [
       {
-        "id": "7250941d96657a16",
+        "id": "9f318d2414e4b14a",
         "type": "tabs",
         "children": [
           {
-            "id": "5efb7ab78b8c837b",
+            "id": "3a024227e2fb87d7",
             "type": "leaf",
             "state": {
               "type": "image",
               "state": {
-                "file": "Assets/Pasted image 20260328172407.png"
+                "file": "Assets/Pasted image 20260319101051.png"
               },
               "icon": "lucide-image",
-              "title": "Pasted image 20260328172407"
+              "title": "Pasted image 20260319101051"
             }
           }
         ]
@@ -25,15 +25,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "be397c1b3fe675c8",
+    "id": "12f2bd5b3a70eb66",
     "type": "split",
     "children": [
       {
-        "id": "595eacbf136ec95f",
+        "id": "2adeebec48bb5b0f",
         "type": "tabs",
         "children": [
           {
-            "id": "c1945f7cf2ca7b37",
+            "id": "65a4f252799764fc",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -46,7 +46,7 @@
             }
           },
           {
-            "id": "33915f3bded52885",
+            "id": "f0ea0a70c6418c13",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -63,7 +63,7 @@
             }
           },
           {
-            "id": "cc7acfe8dbaa2109",
+            "id": "424ebe931d4a3915",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -79,20 +79,20 @@
     "width": 300
   },
   "right": {
-    "id": "bca5b4f97df310f0",
+    "id": "88944274254ab1e0",
     "type": "split",
     "children": [
       {
-        "id": "6fd0b569e9f21518",
+        "id": "c201c2564f44d4de",
         "type": "tabs",
         "children": [
           {
-            "id": "5a8a5c4b3d4ba2f0",
+            "id": "0b750bacdd3dd70d",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Day4_LambdaExpress.md",
+                "file": "Assets/Pasted image 20260319101051.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,25 +102,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Day4_LambdaExpress"
+              "title": "Backlinks for Pasted image 20260319101051"
             }
           },
           {
-            "id": "9cfab81867a6ff90",
+            "id": "3f002f741dc8c8ab",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Day4_LambdaExpress.md",
+                "file": "Assets/Pasted image 20260319101051.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Day4_LambdaExpress"
+              "title": "Outgoing links from Pasted image 20260319101051"
             }
           },
           {
-            "id": "f8ec8b48b9080b55",
+            "id": "fb57e6e48a426782",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -135,7 +135,7 @@
             }
           },
           {
-            "id": "87e2a26faf4e6f0f",
+            "id": "f0d42075e12e3d1f",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -149,18 +149,18 @@
             }
           },
           {
-            "id": "4c5335d32e3d747a",
+            "id": "23efb5b397b6d8ca",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Day4_LambdaExpress.md",
+                "file": "Assets/Pasted image 20260319101051.png",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Day4_LambdaExpress"
+              "title": "Outline of Pasted image 20260319101051"
             }
           }
         ]
@@ -181,45 +181,6 @@
       "bases:Create new base": false
     }
   },
-  "active": "c1945f7cf2ca7b37",
-  "lastOpenFiles": [
-    "BackendAdvanced/Index.md",
-    "Assets/Pasted image 20260328172407.png",
-    "Assets/Pasted image 20260328152115.png",
-    "Assets/Pasted image 20260328150719.png",
-    "Assets/Pasted image 20260328150326.png",
-    "Assets/Pasted image 20260327000611.png",
-    "Assets/Pasted image 20260327000456.png",
-    "Assets/Pasted image 20260327000021.png",
-    "Assets/Pasted image 20260326230104.png",
-    "BackendAdvanced/CachingDesign.md",
-    "Assets/Pasted image 20260325222224.png",
-    "BackendAdvanced/Kafka.md",
-    "Assets/Pasted image 20260325223610.png",
-    "BackendAdvanced/BackendAdvanced_EngineerB2.md",
-    "BackendAdvanced/BackendAdvanced_EngineerB3.md",
-    "BackendAdvanced/BuildTool & Annotation.md",
-    "BackendAdvanced/Locking.md",
-    "BackendAdvanced/UnitTest.md",
-    "OS/Process.md",
-    "OS",
-    "JavaCoreNote/CollectionsFramework.md",
-    "BackendAdvanced",
-    "JavaCoreNote/CompletableFuture.md",
-    "JavaCoreNote/Day3_Stream_API.md",
-    "JavaCoreNote/Day2_ThreadAndMultithreading.md",
-    "JavaCoreNote/Day4_LambdaExpress.md",
-    "JavaCoreNote/Day5_Lock.md",
-    "JavaCoreNote/Day6_Volatile.md",
-    "JavaCoreNote/Day1Concurrency_and_Parallel.md",
-    "JavaCoreNote/Day8_threadpool_executorService.md",
-    "JavaCoreNote/Day7_synchronize_dand_retrantLock.md",
-    "JavaCoreNote/JDK_8_11_17.md",
-    "AIConcept/Giải thích MCP siêu đơn giản và hướng dẫn kết nối MCP Server.md",
-    "JavaCoreNote",
-    "AIConcept",
-    "Assets",
-    "New Text Document.txt",
-    "Untitled.md"
-  ]
+  "active": "65a4f252799764fc",
+  "lastOpenFiles": []
 }
