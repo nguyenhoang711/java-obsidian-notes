@@ -11,10 +11,12 @@
             "id": "913caa1a9460d4e3",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "image",
+              "state": {
+                "file": "Assets/Pasted image 20260404150757.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20260404150757"
             }
           }
         ]
@@ -179,20 +181,24 @@
       "bases:Create new base": false
     }
   },
-  "active": "913caa1a9460d4e3",
+  "active": "c1945f7cf2ca7b37",
   "lastOpenFiles": [
-    "Assets/Pasted image 20260328172407.png",
-    "Assets/Pasted image 20260319101051.png",
-    "Assets/Pasted image 20260319093402.png",
-    "Assets/Pasted image 20260319091658.png",
-    "Assets/Pasted image 20260319090534.png",
+    "BackendAdvanced/Redis.md",
+    "Assets/Pasted image 20260419002153.png",
+    "Assets/Pasted image 20260419001105.png",
+    "Assets/Pasted image 20260410235357.png",
+    "Assets/Pasted image 20260410233013.png",
+    "Assets/Pasted image 20260410232255.png",
+    "Assets/Pasted image 20260410232104.png",
+    "Assets/Pasted image 20260409235336.png",
+    "Assets/Pasted image 20260409003757.png",
+    "Assets/Pasted image 20260405233821.png",
+    "Assets/Pasted image 20260405211447.png",
     "BackendAdvanced/Index.md",
-    "Assets/Pasted image 20260328152115.png",
-    "Assets/Pasted image 20260328150719.png",
-    "Assets/Pasted image 20260328150326.png",
-    "Assets/Pasted image 20260327000611.png",
-    "Assets/Pasted image 20260327000456.png",
-    "Assets/Pasted image 20260327000021.png",
+    "JavaCoreNote/JDK_8_11_17.md",
+    "JavaCoreNote/Day1Concurrency_and_Parallel.md",
+    "JavaCoreNote/CompletableFuture.md",
+    "JavaCoreNote/Day3_Stream_API.md",
     "BackendAdvanced/CachingDesign.md",
     "BackendAdvanced/Kafka.md",
     "BackendAdvanced/BackendAdvanced_EngineerB2.md",
@@ -204,16 +210,12 @@
     "OS",
     "JavaCoreNote/CollectionsFramework.md",
     "BackendAdvanced",
-    "JavaCoreNote/CompletableFuture.md",
-    "JavaCoreNote/Day3_Stream_API.md",
     "JavaCoreNote/Day2_ThreadAndMultithreading.md",
     "JavaCoreNote/Day4_LambdaExpress.md",
     "JavaCoreNote/Day5_Lock.md",
     "JavaCoreNote/Day6_Volatile.md",
-    "JavaCoreNote/Day1Concurrency_and_Parallel.md",
     "JavaCoreNote/Day8_threadpool_executorService.md",
     "JavaCoreNote/Day7_synchronize_dand_retrantLock.md",
-    "JavaCoreNote/JDK_8_11_17.md",
     "AIConcept/Giải thích MCP siêu đơn giản và hướng dẫn kết nối MCP Server.md",
     "JavaCoreNote",
     "AIConcept",
