@@ -72,7 +72,18 @@ Khi connect tới cluster --> map giữa instance_id (key) và hash slots (value
 Tính ra hash slots cần ghi vào: hash key module hash slots --> dựa vào map --> sent data tơi instance đích
 Dữ liệu sau khi hash được phân bố đều
 Một slot có thể chứa nhiều key --> con số trên do turning để chọn ra con số tối ưu.
+## 1.4 Redis Pub/Sub
+![[Pasted image 20260428101926.png]]
+Cung cấp pipeline để gửi message tới subscriber lắng nghe kênh đó
+Pipeline: hỗ trợ đóng gói nhiều command vào 1 lệnh duy nhất --> tiết kiệm bandwith
+Khác với transaction,  pipeline không thực thi các command liên tục và cũng ko chờ command trước hoàn thành để gọi command tiếp.
 # 2. How Redis works ?
+## 2.0 Redis Principles
+Redis không hỗ trợ  ACID đầy đủ
+- Atomic: mỗi node chỉ dùng single-thread --> mỗi command chạy riêng lẻ và không bị ảnh hưởng bởi command khác.
+- **Non-Consistent**: ghi dữ liệu vào Redis có thể bị lỗi và mất bất kì lúc nào
+- Isolation: hỗ trợ Transaction (không gioonbgs transaction của DBMS), vì single-thread --> transaction không làm ảnh hưởng transaction khác
+- **Semi-Durability**: vì lưu trữ trên memory --> node bị shut down --> mất mát dữ liệu
 ## 2.1 Why is Redis so fast?
 ### 2.1.1 Redis bottleneck
 - Giới hạn memory
@@ -154,6 +165,7 @@ Nhược điểm:
 - Có thể **block other operations**
 - Nếu có nhiều AOF logs --> **slow recovery**
 ### 2.4.2 RDB (Redis database)
+
 
 # 3. In practices
 ## 3.0 Question
@@ -292,5 +304,6 @@ Implement distributed lock:
 - Normally set short TTL --> 
 - Distribute TTL --> tránh việc tất cả key hết hạn cùng lúc
 - Pick đúng data structure
-- Tận dụng hash tag --> đảm baỏ các tính năng hoạt động đc
+- Tận dụng hash tag --> đảm bảo các tính năng hoạt động đc
 - Nắm được time complexity của từng câu lệnh (doc Redis)
+
