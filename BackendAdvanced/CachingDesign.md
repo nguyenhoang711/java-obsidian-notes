@@ -172,6 +172,9 @@ Solutions:
 - Validate Request: key không hợp lệ --> chặn không cho gửi tới DB (tránh tấn công DDoS)
 - Sử dụng Bloom Filter lọc data có tồn tại không
 Bloom Filter???
+Sử dụng để truy xuất xem phần tử có nằm trong không?
+![[Pasted image 20260429163506.png]]
+Tạo 1 Filter Bloom layer (cache) để kiểm tra, nếu tồn tại rồi thì trả về dữ liệu luôn, ngược lại cho phép xuống db
 ## 3. High traffic challenges
 #### 3.2.1 Problem 05: Hot keys
 ![[Pasted image 20260227221815.png]]

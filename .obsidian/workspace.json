@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "9f318d2414e4b14a",
+        "id": "02013a621361302e",
         "type": "tabs",
         "children": [
           {
-            "id": "3a024227e2fb87d7",
+            "id": "72c15a5607e11028",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "JavaCoreNote/Day7_synchronize_dand_retrantLock.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Day7_synchronize_dand_retrantLock"
+              "title": "New tab"
             }
           }
         ]
@@ -185,11 +181,16 @@
   },
   "active": "65a4f252799764fc",
   "lastOpenFiles": [
+    "AIConcept/Giải thích MCP siêu đơn giản và hướng dẫn kết nối MCP Server.md",
+    "Assets/Pasted image 20260504143316.png",
+    "BackendAdvanced/CachingDesign.md",
+    "Assets/Pasted image 20260429163506.png",
+    "BackendAdvanced/Redis.md",
+    "JavaCoreNote/Day7_synchronize_dand_retrantLock.md",
     "JavaCoreNote/Day6_Volatile.md",
     "Assets/Pasted image 20260406173111.png",
     "BackendAdvanced/BackendAdvanced_EngineerB3.md",
     "BackendAdvanced/BuildTool & Annotation.md",
-    "JavaCoreNote/Day7_synchronize_dand_retrantLock.md",
     "JavaCoreNote/Day5_Lock.md",
     "JavaCoreNote/Day4_LambdaExpress.md",
     "JavaCoreNote/Day3_Stream_API.md",
@@ -197,7 +198,6 @@
     "JavaCoreNote/Day1Concurrency_and_Parallel.md",
     "JavaCoreNote/CompletableFuture.md",
     "JavaCoreNote/CollectionsFramework.md",
-    "BackendAdvanced/Redis.md",
     "Assets/Pasted image 20260428101926.png",
     "Assets/Pasted image 20260405153752.png",
     "Assets/Pasted image 20260405005415.png",
@@ -205,16 +205,12 @@
     "Assets/Pasted image 20260405211447.png",
     "Assets/Pasted image 20260405233821.png",
     "Assets/Pasted image 20260409003757.png",
-    "Assets/Pasted image 20260409235336.png",
-    "Assets/Pasted image 20260410233013.png",
     "AIConcept/Model_AI_low_level.md",
     "BackendAdvanced/Index.md",
     "OS/Process.md",
-    "AIConcept/Giải thích MCP siêu đơn giản và hướng dẫn kết nối MCP Server.md",
     "JavaCoreNote/Day8_threadpool_executorService.md",
     "BackendAdvanced/Kafka.md",
     "BackendAdvanced/Locking.md",
-    "BackendAdvanced/CachingDesign.md",
     "JavaCoreNote/JDK_8_11_17.md"
   ]
 }
