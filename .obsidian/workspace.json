@@ -11,14 +11,12 @@
             "id": "72c15a5607e11028",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "AIConcept/ClaudeCode 101.md",
-                "mode": "source",
-                "source": false
+                "file": "Assets/Pasted image 20260509161716.png"
               },
-              "icon": "lucide-file",
-              "title": "ClaudeCode 101"
+              "icon": "lucide-image",
+              "title": "Pasted image 20260509161716"
             }
           }
         ]
@@ -185,37 +183,39 @@
   },
   "active": "72c15a5607e11028",
   "lastOpenFiles": [
-    "Assets/Pasted image 20260429163506.png",
+    "Assets/Pasted image 20260509161928.png",
+    "AIConcept/Vấn đề context Window.md",
+    "Assets/Pasted image 20260509170858.png",
+    "Assets/Pasted image 20260509164957.png",
+    "Assets/Pasted image 20260509164721.png",
+    "Assets/Pasted image 20260509164509.png",
+    "Assets/Pasted image 20260509164158.png",
+    "Assets/Pasted image 20260509163916.png",
+    "Assets/Pasted image 20260509161716.png",
     "AIConcept/ClaudeCode 101.md",
     "AIConcept/Giải thích MCP siêu đơn giản và hướng dẫn kết nối MCP Server.md",
+    "JavaCoreNote/JDK_8_11_17.md",
+    "JavaCoreNote/Day3_Stream_API.md",
+    "JavaCoreNote/Day8_threadpool_executorService.md",
+    "JavaCoreNote/Day7_synchronize_dand_retrantLock.md",
+    "JavaCoreNote/Day2_ThreadAndMultithreading.md",
+    "JavaCoreNote/Day1Concurrency_and_Parallel.md",
+    "JavaCoreNote/CollectionsFramework.md",
+    "JavaCoreNote/CompletableFuture.md",
+    "JavaCoreNote/Day6_Volatile.md",
+    "JavaCoreNote/Day5_Lock.md",
+    "JavaCoreNote/Day4_LambdaExpress.md",
+    "JavaCoreNote/JavaStorageUsage.md",
+    "Assets/Pasted image 20260429163506.png",
     "Assets/Pasted image 20260504143316.png",
     "BackendAdvanced/CachingDesign.md",
     "BackendAdvanced/Redis.md",
-    "JavaCoreNote/Day7_synchronize_dand_retrantLock.md",
-    "JavaCoreNote/Day6_Volatile.md",
-    "Assets/Pasted image 20260406173111.png",
     "BackendAdvanced/BackendAdvanced_EngineerB3.md",
     "BackendAdvanced/BuildTool & Annotation.md",
-    "JavaCoreNote/Day5_Lock.md",
-    "JavaCoreNote/Day4_LambdaExpress.md",
-    "JavaCoreNote/Day3_Stream_API.md",
-    "JavaCoreNote/Day2_ThreadAndMultithreading.md",
-    "JavaCoreNote/Day1Concurrency_and_Parallel.md",
-    "JavaCoreNote/CompletableFuture.md",
-    "JavaCoreNote/CollectionsFramework.md",
-    "Assets/Pasted image 20260428101926.png",
-    "Assets/Pasted image 20260405153752.png",
-    "Assets/Pasted image 20260405005415.png",
-    "Assets/Pasted image 20260405163732.png",
-    "Assets/Pasted image 20260405211447.png",
-    "Assets/Pasted image 20260405233821.png",
-    "Assets/Pasted image 20260409003757.png",
     "AIConcept/Model_AI_low_level.md",
     "BackendAdvanced/Index.md",
     "OS/Process.md",
-    "JavaCoreNote/Day8_threadpool_executorService.md",
     "BackendAdvanced/Kafka.md",
-    "BackendAdvanced/Locking.md",
-    "JavaCoreNote/JDK_8_11_17.md"
+    "BackendAdvanced/Locking.md"
   ]
 }
