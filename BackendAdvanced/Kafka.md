@@ -330,3 +330,6 @@ Partition có broker bị lỗi, mất kết nối
 ## 8.5 Leadership
 Producer ghi vào leader, consumer chỉ đọc từ leader partition
 - Consumer có thể đọc từ 1 replica gần nhất (cấu hình consumer) --> lưu ý cần nắm cách thức hoạt động của nó
+
+
+# # 
