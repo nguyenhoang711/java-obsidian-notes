@@ -22,7 +22,19 @@ Isolation: chuyển tiền đồng thời thì cũng như chạy tuần tự, n�
 ## Isolation level
 - Dirty read
 
+## Concurrency Problems
+Nghiệp vụ book phòng, vé
+- Kiểm tra phòng có id = 123 có tồn tại hay không
+- Nếu có thì mới vào đặt
+![[Pasted image 20261010231436.png]]
+Vấn đề: khi cả 2 thằng đều thao tác chung để đặt cùng phòng này
+Cách giải quyết
++ Ngăn chặn concurrency xảy ra (pessimistic lock)
++ Để concurrency xảy ra, kiểm tra sau đó (optimistic lock)
+
 ## MySQL Lock
+Lock: ưu tiên row-level lock **(SELECT ... FOR UPDATE)**
+
 ### Pessimistic lock
 - Khóa không cho truy cập data đang có transaction và ko cho update
 - đảm bảo tại 1 thời điểm, chỉ có 1 transaction truy cập data, các transaction khác phải đợi
@@ -48,3 +60,8 @@ Nhược:
 Nhược:
 - Xử lý conflict: đến cuối transaction mới biết
 - Buộc maintain cột version (reset value)
+Dead lock:
+- 2 thằng transaction A và B 
+- Cùng giữ 1 cái và cùng đợi 1 cái
+- 2 ông cùng giữ và cùng đợi chéo nhau
+Optimistic Lock: đôi lúc khi transaction quá dài, nhiều thao tác trong cùng 1 transaction thì sẽ bị lâu, gây mất hiệu quả về mặt performance.
