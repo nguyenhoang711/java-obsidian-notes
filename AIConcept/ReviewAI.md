@@ -1,0 +1,6 @@
+- bác dùng AI như nào kể cả dùng CRUD thì cx phải như nào CRUD đúng, rồi code AI Review có tuân thủ rule không, có xử lý được vấn đề tràn context không, code xong nghiệp vụ thay đổi thì xử lý như nào,... nhiều thứ lắm kể ra thì ko hết dc khác biệt nhất người tuyển dụng muốn là mình dùng AI hiệu quả và review dc
+- AI giờ phải áp dụng theo quy trình từ khi bắt đầu nhận yêu cầu từ BA : phân tích đề bài, brainstoming, viết plan, viết tài liệu tkct, dev, test, review code.
+- Em có biết về agentic AI không?
+- Có học về prompt engineering, context engineering, harness engineering chưa?
+- Thường dev hiện nay người ta sẽ build harness trên claude code, gh copilot,…
+- Thông thường khi trả lời xong người ta sẽ hỏi em tối ưu context/token như thế nào?

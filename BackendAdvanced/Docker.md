@@ -244,3 +244,56 @@ Sau đó chạy lệnh `docker compose up` để active toàn bộ service
 - docker compose down: remove all running services
 - docker compose logs: monitor the output of running containers
 - docker compose ps: list all services
+## 3.2 Docker network
+![[Pasted image 20260614165055.png]]
+Khi start các service cùng docker compose command, automatically đưa các containers vào chung 1 network với DNS (domain name service)
+Các service được đặt tên sau khi tên được given trong docker compose file. Nhờ đó các containers reference tới nhau qua services name
+### 3.2.1 Manual network definition
+Định nghĩa network manual trong docker compose file, dễ dàng việc define ở 2 docker compose file có thể gọi qua nhau qua network, share network
+```docker-compose.yaml
+services:
+  db:
+    image: postgres:18.1-alpine
+    networks:
+      - database-network <em># Name in this Docker Compose file</em>
+
+networks:
+  database-network: <em># Name in this Docker Compose file</em>
+    name: the-database-network <em># Name that will be the actual name of the network
+```
+Tạo ra connection tới external network (network định nghĩa bởi docker-compose file khác)  được khai báo như sau:
+``` docker-compose.yaml
+services:
+  db:
+    image: backend-image
+    networks:
+      - database-network
+
+networks:
+  database-network:
+    external:
+      name: the-database-network # Must match the actual name of the network
+```
+
+
+```docker-compose.yaml
+services:
+  db:
+    image: backend-image
+
+networks:
+  default:
+    external:
+      name: the-database-network # Must match the actual name of the network
+```
+
+Cách này là khai báo tất cả service gọi tới network mặc định name `default`, cách khai báo dưới cho phép mặc định kết nối tới external network
+### 3.3.2 Scaling
+`docker compose port`: kiểm tra port nào được bound tới
+```
+$ docker compose up --scale whoami=3
+  Starting whoami_whoami_1 ... done
+  Creating whoami_whoami_2 ... done
+  Creating whoami_whoami_3 ... done
+```
+Scale chạy trên multiple nodes
