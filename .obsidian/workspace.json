@@ -1,80 +1,56 @@
 {
   "main": {
-    "id": "2bb850414cb5aab7",
+    "id": "d563f7a643857f88",
     "type": "split",
     "children": [
       {
-        "id": "0d4e3a04a55b1b77",
+        "id": "e4593ccc7b537090",
         "type": "tabs",
         "children": [
           {
-            "id": "b97ec183770c8001",
+            "id": "2e4239524d9f31d0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HocNhanh/Phân tích Yêu cầu & Thiết kế Hệ thống.md",
+                "file": "BackendAdvanced/Engineer/BackendAdvanced_EngineerB3.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Phân tích Yêu cầu & Thiết kế Hệ thống"
-            }
-          },
-          {
-            "id": "2e71a4a400720444",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Assets/Pasted image 20261010172003.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20261010172003"
-            }
-          },
-          {
-            "id": "5f61d7f46f742e1e",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Assets/Pasted image 20261011234808.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20261011234808"
-            }
-          },
-          {
-            "id": "26c8cdc4e3c4b750",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "NoteSkills.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "NoteSkills"
+              "title": "BackendAdvanced_EngineerB3"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "12f2bd5b3a70eb66",
+    "id": "be397c1b3fe675c8",
     "type": "split",
     "children": [
       {
-        "id": "2adeebec48bb5b0f",
+        "id": "595eacbf136ec95f",
         "type": "tabs",
         "children": [
           {
-            "id": "f0ea0a70c6418c13",
+            "id": "c1945f7cf2ca7b37",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "33915f3bded52885",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -91,7 +67,7 @@
             }
           },
           {
-            "id": "424ebe931d4a3915",
+            "id": "cc7acfe8dbaa2109",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -99,44 +75,28 @@
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
-          },
-          {
-            "id": "b276056973154541",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-folder-closed",
-              "title": "Files"
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300
   },
   "right": {
-    "id": "88944274254ab1e0",
+    "id": "bca5b4f97df310f0",
     "type": "split",
     "children": [
       {
-        "id": "c201c2564f44d4de",
+        "id": "6fd0b569e9f21518",
         "type": "tabs",
         "children": [
           {
-            "id": "0b750bacdd3dd70d",
+            "id": "5a8a5c4b3d4ba2f0",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "BackendAdvanced/Index.md",
+                "file": "Day4_LambdaExpress.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,25 +106,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Index"
+              "title": "Backlinks for Day4_LambdaExpress"
             }
           },
           {
-            "id": "3f002f741dc8c8ab",
+            "id": "9cfab81867a6ff90",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "BackendAdvanced/Index.md",
+                "file": "Day4_LambdaExpress.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Index"
+              "title": "Outgoing links from Day4_LambdaExpress"
             }
           },
           {
-            "id": "fb57e6e48a426782",
+            "id": "f8ec8b48b9080b55",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -179,7 +139,7 @@
             }
           },
           {
-            "id": "f0d42075e12e3d1f",
+            "id": "87e2a26faf4e6f0f",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -193,18 +153,18 @@
             }
           },
           {
-            "id": "23efb5b397b6d8ca",
+            "id": "4c5335d32e3d747a",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "BackendAdvanced/Index.md",
+                "file": "Day4_LambdaExpress.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Index"
+              "title": "Outline of Day4_LambdaExpress"
             }
           }
         ]
@@ -225,47 +185,53 @@
       "bases:Create new base": false
     }
   },
-  "active": "26c8cdc4e3c4b750",
+  "active": "2e4239524d9f31d0",
   "lastOpenFiles": [
-    "Assets/Pasted image 20261010172003.png",
-    "Assets/Pasted image 20261011234808.png",
-    "Assets/Pasted image 20261010174045.png",
-    "BackendAdvanced/Engineer/BackendAdvanced_EngineerB3.md",
-    "HocNhanh/Phân tích Yêu cầu & Thiết kế Hệ thống.md",
-    "BackendAdvanced/RedisLUA.md",
-    "BackendAdvanced/Redis.md",
-    "Assets/Pasted image 20261011222351.png",
-    "BackendAdvanced/Engineer/BackendAdvanced_EngineerB2.md",
-    "Assets/Pasted image 20261010231436.png",
-    "BackendAdvanced/Engineer/BackendAdvanced_B1.md",
-    "JavaCoreNote/Day2_ThreadAndMultithreading.md",
-    "JavaCoreNote/Day1Concurrency_and_Parallel.md",
-    "BackendAdvanced/Locking.md",
-    "BackendAdvanced/MessageQueue.md",
-    "BackendAdvanced/Kafka.md",
-    "BackendAdvanced/Index.md",
-    "BackendAdvanced/DATABASE.md",
-    "BackendAdvanced/CachingDesign.md",
-    "BackendAdvanced/BuildTool & Annotation.md",
-    "BackendAdvanced/Untitled.md",
-    "BackendAdvanced/Docker.md",
-    "BackendAdvanced/Engineer",
     "BackendAdvanced/Ronin/Computer Network.md",
-    "NoteSkills.md",
-    "BackendAdvanced/Ronin",
+    "BackendAdvanced/Engineer/BackendAdvanced_EngineerB3.md",
+    "BackendAdvanced/Engineer/BackendAdvanced_EngineerB2.md",
+    "Assets/Pasted image 20261112230833.png",
     "SystemDesign/Bài6_Mô hình Client-Server và vòng đời một request.md",
     "SystemDesign/Bài5_Các con số kỹ sư nên nhớ và quy trình 4 bước trả lời.md",
     "SystemDesign/Bài4_Các trục đánh đổi độ trễ, thông lượng, nhất quán.md",
     "SystemDesign/Bài3_Ước lượng dung lượng và tải (back-of-the-envelope).md",
     "SystemDesign/Bài2_Yêu cầu chức năng và phi chức năng.md",
     "SystemDesign/Bài1_System Design là gì. Tư duy và quy trình phỏng vấn.md",
-    "SystemDesign",
+    "Phân tích Yêu cầu & Thiết kế Hệ thống (Requirements & System Design)/Bài9_Basic Design là gì_ Quyết định phần người dùng nhìn thấy (Visible Layer).md",
+    "Phân tích Yêu cầu & Thiết kế Hệ thống (Requirements & System Design)/Bài8_Viết Tài liệu Định nghĩa Yêu cầu (Requirement Definition Document) — Cấu trúc & cách lấy đồng thuận vendor.md",
+    "Phân tích Yêu cầu & Thiết kế Hệ thống (Requirements & System Design)/Bài7_ Requirement Definition (Yêu cầu chốt) - Phân loại Functional, Non-functional và UI_UX.md",
+    "Phân tích Yêu cầu & Thiết kế Hệ thống (Requirements & System Design)/Bài20_Case Study thực tế_Đi xuyên một dự án từ Demands đến hệ thống hoàn chỉnh.md",
+    "Phân tích Yêu cầu & Thiết kế Hệ thống (Requirements & System Design)/Bài19_Làm việc trong dự án kiểu Nhật — Vai trò BrSE, mô hình V-model và quy chuẩn tài liệu.md",
+    "Phân tích Yêu cầu & Thiết kế Hệ thống (Requirements & System Design)/Bài18_Quản lý Thay đổi Yêu cầu & Phòng ngừa Scope Creep — Change Request và đánh giá tác động.md",
+    "Phân tích Yêu cầu & Thiết kế Hệ thống (Requirements & System Design)/Bài17_Truy vết Yêu cầu (Requirement Traceability) — Liên kết Demands đến Design, Code và Test.md",
+    "Phân tích Yêu cầu & Thiết kế Hệ thống (Requirements & System Design)/Bài16_Thiết kế Logic Xử lý — Class Diagram & Sequence Diagram cho luồng nghiệp vụ.md",
+    "Phân tích Yêu cầu & Thiết kế Hệ thống (Requirements & System Design)/Bài15_Thiết kế API & Cơ sở dữ liệu — Interface Contract, ERD, Schema và ràng buộc.md",
+    "Phân tích Yêu cầu & Thiết kế Hệ thống (Requirements & System Design)/Bài14_Thiết kế Kiến trúc & Phân rã Module — Layered, MVC_MVVM và ranh giới trách nhiệm.md",
+    "Phân tích Yêu cầu & Thiết kế Hệ thống (Requirements & System Design)/Bài13_Detailed Design là gì — Quyết định phần ẩn bên trong (Internal Layer).md",
+    "Phân tích Yêu cầu & Thiết kế Hệ thống (Requirements & System Design)/Bài12_Review & Lấy Đồng Thuận Khách Hàng — Vì Sao Basic Design Cần Ký Xác Nhận Trước Khi Code.md",
+    "Phân tích Yêu cầu & Thiết kế Hệ thống (Requirements & System Design)/Bài11_Thiết kế Chức năng & Luồng nghiệp vụ (Functional Design) — Ánh xạ yêu cầu sang tính năng.md",
+    "Phân tích Yêu cầu & Thiết kế Hệ thống (Requirements & System Design)/Bài10_Thiết kế Giao diện & Màn hình (Screen Design) — Wireframe, Layout, Luồng Input_Output.md",
     "Phân tích Yêu cầu & Thiết kế Hệ thống (Requirements & System Design)",
-    "Assets/Pasted image 20260727233100.png",
+    "NoteSkills.md",
+    "JavaCoreNote/SpringBoot.md",
+    "HocNhanh/Phân tích Yêu cầu & Thiết kế Hệ thống.md",
     "HocNhanh",
+    "BackendAdvanced/Ronin",
+    "BackendAdvanced/Engineer",
+    "Assets/Pasted image 20261011234808.png",
+    "Assets/Pasted image 20261011222351.png",
+    "Assets/Pasted image 20261010231436.png",
+    "Assets/Pasted image 20261010174045.png",
+    "Assets/Pasted image 20261010172003.png",
+    "Assets/Pasted image 20260727233100.png",
     "Assets/Pasted image 20260619002916.png",
     "Assets/Pasted image 20260619002528.png",
     "Assets/Pasted image 20260618012620.png",
-    "Assets/Pasted image 20260618012442.png"
+    "SystemDesign",
+    "OS",
+    "BackendAdvanced",
+    "JavaCoreNote",
+    "AIConcept",
+    "Assets"
   ]
 }
