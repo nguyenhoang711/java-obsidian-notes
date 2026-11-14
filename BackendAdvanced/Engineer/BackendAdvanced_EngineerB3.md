@@ -96,3 +96,82 @@ Kiểm tra version --> nếu ko đúng version --> throw exception --> rollback 
 Chỉ có 1 thằng đầu tiên được quyền truy cập update dữ liệu
 **Select for update lock**
 update trường available từ true --> false
+# Use case
+## Use case 1: Cache Data
+Giúp tăng tốc độ đọc, thay vì truy xuất trong DB có thể lưu ở cache lấy cho nhanh
+## Use case 2: Data dùng chung
+Hệ thống phân tán (distributed) có nhiều instance cùng truy cập 1 dữ liệu chung (role, permission, ...) và ít thay đổi.
+![[Pasted image 20261112230210.png]]
+## Use case 3: Distributed lock
+Tương tự cơ chế pessimistic lock: sử dụng hàm **setnx()** để tạo key. Key này là duy nhất chỉ 1 ông được vào tạo
+![[Pasted image 20261112230833.png]]
+Những thằng cùng vào tạo key ko tạo được thì sẽ báo lỗi để thử lại sau.
+**select for update nowait:** trả về exception mà không phải chờ thằng tạo key thành công xử lý xong.
+## Use case 4: Rate limiter
+GIới hạn số lượng request nào đó trong hệ thống
+### Rate limiter để:
+- Trống tấn công DDoS
+- Bruteforce attack
+- Data scraping
+### Phân loại:
+- IP-based
+- User-based
+- App-based
+- token bucket
+Đếm số lần: hàm **incr()** đếm số lần action được thực hiện, kết hợp expire time để giới hạn thời gian thử lại (2p, 5p, 10p)
+![[Pasted image 20261114141858.png]]
+Ngoài ra có thể kết hợp thuật toán sliding window/ leak bucket để tối ưu rate limiter.
+### Implement với Redis
+VD: cần limit 20req/phút
+Tạo key cho mỗi API được request đến theo mẫu
+[API_KEY] : [current_time_number] là key độc lập với từng phút
+Expire key sau mỗi phút
+![[Pasted image 20261114144056.png]]
+
+Pseudo-code:
+- GET [user-api-key]:[current minute number]
+- Nếu result từng dòng < 20 thì thực thi ngay--> tới line 4, không thì line 3
+- Show error message và end connection
+1. MULTI
+2. INCR [user-api-key]:[current minute number]
+3. EXPIRE [user-api-key]:[current minute number]
+4. EXEC
+## Use case 5: Leaderboard
+̈ Bài toán: có nhiều người chơi, mỗi người chơi có 1 điểm số nhất định thay đổi
+theo thời gian.
+ ̈ Cần update: điểm của người chơi (có thể 1 ng nhiều điểm thay đổi theo thời
+gian, chỉ ghi nhận kết quả cuối cùng của ng đó)
+ ̈ Cần truy vấn:
+¤ top 10 người chơi có điểm bé nhất
+¤ truy vấn rank của 1 người chơi bất kì
+![[Pasted image 20261114151347.png]]
+YC1: đặt index vào cột điểm và sort theo SCORE ASC
+YC2: khó để làm với DB
+
+### Implement Redis:
+̈ Sử dụng cấu trúc sortedset trong redis
+¤ https://redis.io/docs/data-types/sorted-sets
+
+ ̈ Update: ZADD key score member: https://redis.io/commands/zadd/
+¤ ZADD leaderboard 359 100.
+¤ ZADD: nếu member đã có trong sorted set
+ ̈ Top 10 người chơi có điểm cao nhất:
+¤ ZRANGE key start stop : https://redis.io/commands/zrange/
+¤ ZRANGE leaderboard 0 9
+ ̈ Truy vấn rank của 1 người chơi bất kì:
+¤ ZRANK key member : https://redis.io/commands/zrank/
+¤ ZRANK leaderboard 100: trả về rank của user 100
+## Use case 6: Real-time update
+Sử dụng redis pub/sub kết hợp với socketio hoặc websocket để cập
+nhật realtime trên nền tảng web
+![[Pasted image 20261114151549.png]]
+
+VD: hệ thống chatroom
+### Pub/Sub khác Queue
+Pub/Sub: subcriber lỗi ko nhận đc, nhưng thằng khác subcribe nhận đc
+Queue: subcriber lỗi, khi khôi phục task vẫn ở trong queue
+# Bài tập
+1. Viết service rate limiter dựa trên địa chỉ IP của người dùng. Trong 1
+phút không quá 30 requests.
+ 2. Viết 1 service hỗ trợ distributed lock
+ 
