@@ -13,10 +13,10 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "Assets/Pasted image 20261114151549.png"
+                "file": "Assets/Pasted image 20261114155724.png"
               },
               "icon": "lucide-image",
-              "title": "Pasted image 20261114151549"
+              "title": "Pasted image 20261114155724"
             }
           }
         ]
@@ -186,20 +186,20 @@
   },
   "active": "b276056973154541",
   "lastOpenFiles": [
+    "BackendAdvanced/Engineer/BackendAdvanced_EngineerB6 - Monitoring.md",
+    "Assets/Pasted image 20261114164644.png",
+    "Assets/Pasted image 20261114161151.png",
+    "Assets/Pasted image 20261114160905.png",
+    "Assets/Pasted image 20261114155724.png",
+    "Assets/Pasted image 20261114151549.png",
     "Assets/Pasted image 20261114141858.png",
     "Assets/Pasted image 20260404150757.png",
     "BackendAdvanced/Engineer/BackendAdvanced_EngineerB3.md",
-    "Assets/Pasted image 20261114151549.png",
     "Assets/Pasted image 20261114151347.png",
     "Assets/Pasted image 20261114144056.png",
     "Assets/Pasted image 20261112230210.png",
-    "Assets/Pasted image 20261112230833.png",
-    "Assets/Pasted image 20261011234808.png",
     "SystemDesign/SystemDesign.md",
     "SystemDesign/DesignPrinciplesAndDestination.md",
-    "Assets/Pasted image 20260507004132.png",
-    "Assets/Pasted image 20260504233950.png",
-    "Assets/Pasted image 20260503232908.png",
     "HocNhanh/Phân tích Yêu cầu & Thiết kế Hệ thống.md",
     "NoteSkills.md",
     "BackendAdvanced/RedisLUA.md",
@@ -223,7 +223,6 @@
     "SystemDesign/Bài6_Mô hình Client-Server và vòng đời một request.md",
     "SystemDesign/Bài5_Các con số kỹ sư nên nhớ và quy trình 4 bước trả lời.md",
     "SystemDesign/Bài4_Các trục đánh đổi độ trễ, thông lượng, nhất quán.md",
-    "SystemDesign/Bài3_Ước lượng dung lượng và tải (back-of-the-envelope).md",
     "SystemDesign",
     "Phân tích Yêu cầu & Thiết kế Hệ thống (Requirements & System Design)",
     "HocNhanh"
